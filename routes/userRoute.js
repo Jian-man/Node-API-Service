@@ -2,10 +2,7 @@ const express = require('express');
 const User = require('../models/userModel') 
 const { getUser,getUserID,saveUser,updateUser,deleteUser} = require('../controllers/userController') 
   
-
 const route = express.Router();
-
-
 
 // Get all users
 route.get('/', getUser);

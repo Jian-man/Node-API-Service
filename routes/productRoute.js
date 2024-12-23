@@ -2,9 +2,7 @@ const express = require('express');
 const Product = require('../models/productModel') 
 const { getProducts,getProductID,saveProduct,updateProduct,deleteProduct} = require('../controllers/productController') 
   
-
 const productRoute = express.Router() // create a new router;
-
 
 // Get all products
 productRoute.get('/',getProducts ) 
